@@ -30,36 +30,36 @@ export default class SampleAddinPage {
 
     /** @returns {JQuery} */
     get SessionIdField() {
-        return this.$("#sessionId");
+        return this.$('#sessionId');
     }
 
     /** @returns {JQuery} */
     get UsernameField() {
-        return this.$("#username");
+        return this.$('#username');
     }
 
     /** @returns {JQuery} */
     get DatabaseField() {
-        return this.$("#database");
+        return this.$('#database');
     }
 
     /** @returns {JQuery} */
     get ApiServerField() {
-        return this.$("#apiServer");
+        return this.$('#apiServer');
     }
 
     /** @returns {JQuery} */
     get DeviceNameField() {
-        return this.$("#deviceName");
+        return this.$('#deviceName');
     }
 
     /** @returns {JQuery} */
     get VinField() {
-        return this.$("#vin");
+        return this.$('#vin');
     }
 
     /** @returns {JQuery} */
     get DeviceSpecificActionButton() {
-        return this.$("#deviceSpecificAction");
+        return this.$('#deviceSpecificAction');
     }
 }
