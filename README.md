@@ -4,5 +4,9 @@ This is a template that can be used to create Geotab Drive add-ins.  For informa
 
 ## About This Template
 This template builds upon the template currently available in Yeoman, but utilizes WebPack in conjunction with the latest available versions (a/o 10/2019) of Gulp and Babel.
+![](docs/images/vscode_demo.gif)
+
+
+## Typescript
 
 Typescript support can easily be added by modifying the webpack config and uncommenting the typescript support section.
