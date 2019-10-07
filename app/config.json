@@ -1,0 +1,19 @@
+{
+  "name": "Sample",
+  "supportEmail": "your.email@domain.com",
+  "version": "0.0.1",
+  "items": [{
+    "url": "sample.html",
+    "path": "DriveAppLink/",
+    "menuName": {
+      "en": "Sample Addin"
+    },
+    "icon": "icon.svg"
+  }],
+  "dev": {
+    "root": "sample",
+    "dist": {
+      "host": ""
+    }
+  }
+}

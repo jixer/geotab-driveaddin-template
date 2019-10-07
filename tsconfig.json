@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "module": "es2015",
+      "target": "es5",
+      "rootDir": "app",
+      "sourceMap": true
+    }
+  }

@@ -1,0 +1,6 @@
+# Build files
+bower_components
+node_modules
+
+# Chrome user files
+.vscode/chrome

@@ -1,0 +1,11 @@
+{
+  "name": "sample_drive_add-in",
+  "authors": [
+    "Unknown <your.email@domain.com>"
+  ],
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "dialog-polyfill": "^0.5.0"
+  }
+}

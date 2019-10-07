@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sample Addin</title>
+    <script src="samplebundle.js"></script>
+</head>
+
+<body>
+  <div id="sample" class="hidden">
+    <div class="panel">
+      <h2 class="panel__title"  style="text-transform:initial;" >Session Info</h2>
+      <p>
+        <b>Session Id</b><br />
+        <span id="sessionId" />
+      </p>
+      <p>
+        <b>Username</b><br />
+        <span id="username" />
+      </p>
+      <p>
+        <b>Database</b><br />
+        <span id="database" />
+      </p>
+      <p>
+        <b>API Server</b><br />
+        <span id="apiServer" />
+      </p>
+    </div>   
+    <div class="panel">
+      <h2 class="panel__title"  style="text-transform:initial;" >Device Info</h2>
+      <p>
+        <b>Name</b><br />
+        <span id="deviceName" />
+      </p>
+      <p>
+        <b>VIN</b><br />
+        <span id="vin" />
+      </p>
+    </div>
+    <div class="panel">
+      <h2 class="panel__title"  style="text-transform:initial;" >Sample Actions</h2>
+      <span>The example button below will do different stuff based upon iOS or Android</span>
+      <button id="deviceSpecificAction">Tap Me</button>
+    </div>         
+  </div>
+</body>
+
+</html>
