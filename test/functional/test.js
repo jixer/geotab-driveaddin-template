@@ -45,29 +45,30 @@ describe('User visits addin', () => {
     const browser = new Browser();
 
     // to enable zombie debugging, uncomment this line
-    // browser.debug();
+    //browser.debug();
 
     // open page
     before(done => {
-        return browser.visit('http://localhost:9000/', done);
+        console.log('Zombie: Visiting page');
+        browser.visit('http://localhost:3000/', done);
     });
 
     // login (only part of local add-in debugging)
     before(done => {
-        browser
-            .fill('Email', mocks.login.userName)
-            .fill('Password', mocks.login.password)
-            .fill('Database', mocks.login.database)
-            .fill('Server', mockServer)
-            .clickLink('Login', done);
+        console.log('Zombie: login');
+        browser.fill('#email', mocks.login.userName)
+               .then(() => browser.fill('#password', mocks.login.password))
+               .then(() => browser.fill('#database', mocks.login.database))
+               .then(() => browser.fill('#server', mockServer))
+               .then(() => browser.clickLink('#loginBtn', done));
     });
     
-        // select a device (only part of local add-in debugging)
-        before(done => {
-            browser
-                .selectOption('option[value="' + mocks.device.id + '"]')
-                .clickLink('#okBtn', done);
-        });
+    // select a device (only part of local add-in debugging)
+    before(done => {
+        console.log('Zombie: select a device');
+        browser.selectOption('option[value="' + mocks.device.id + '"]')
+               .then(() => browser.clickLink('#okBtn', done));
+    });
   
     it('should be loaded', () => {
         browser.assert.success();
