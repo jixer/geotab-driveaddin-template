@@ -7,6 +7,18 @@ This template builds upon the template currently available in Yeoman, but utiliz
 
 Typescript support can easily be added by modifying the webpack config and uncommenting the typescript support section.
 
+## Gulp Commands
+Serve the files for debugging purposes:
+```bash
+gulp
+```
+> By default, this command does not automatically launch a browser.  To change this functionality, edit tasks/server.js and set the option `open: true`
+
+Publish the production files to the dist folder:
+```bash
+gulp publish
+```
+
 ## VSCode
 This template can be used in numerous IDE's, but there is built-in support for VSCode debugging in conjunction with the Chrome Debugger extension via the ./vscode files.  Debugging is as simple as running the "gulp" command and then hitting F5 with full support for adding breakpoints in your code and stepping through logic.
 
