@@ -32,15 +32,6 @@ const formatJson = (json) => {
     return json; // must return JSON object.
 }
 
-// const wait = (duration) => {
-//   return new Promise(resolve => {
-//     console.log(`waiting for ${duration}ms`);
-//     setTimeout(() => {
-//       resolve();
-//     }, duration);
-//   })
-// }
-
 export const run_tests = () => 
   gulp.src(`${testsPath}/**/*.js`, { read: false })
       .pipe(wait(15000))
@@ -65,37 +56,6 @@ export const run_lint = () =>
       .pipe(eslint())
       .pipe(eslint.format())
       .pipe(eslint.failAfterError());
-
-// export const run_tests = () => {
-//   // gulp.src(`${testsPath}/**/*.js`, { read: false })
-//   //     .pipe(wait)
-//   return new Promise((resolve, reject) => {
-//     // gulp.src(`${testsPath}/**/*.js`, { read: false })
-//     //     .pipe(wait)
-//     setTimeout(() => {
-//       gulp.src(`${testsPath}/**/*.js`, { read: false })
-//           .pipe(mocha({
-//             reporter: 'nyan',
-//             timeout: 10000
-//           }))
-//           .once('error', err => {
-//             console.log('Done');
-//             console.error(err);
-//             browser.exit(1);
-//             process.exit(1);
-//             reject();
-//           })
-//           .once('EVENT_SUITE_END', () => {
-//             console.log('Done');
-//             browser.exit();
-//             process.exit();
-//             resolve();
-//           });
-//     }, 15000);
-
-//   })
-// }
-
 
 export const bower_install = () => bower();
 export const copy_config = () => 
