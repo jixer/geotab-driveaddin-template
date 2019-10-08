@@ -23,14 +23,18 @@
     "gulp-bower": "0.0.15",
     "gulp-eslint": "^6.0.0",
     "gulp-json-editor": "^2.5.3",
+    "gulp-mocha": "^7.0.2",
+    "gulp-wait": "0.0.2",
     "jquery": "^3.4.1",
+    "nock": "^11.4.0",
     "regenerator-runtime": "^0.13.3",
     "style-loader": "^1.0.0",
     "typescript": "^3.6.3",
     "webpack": "^4.41.0",
     "webpack-dev-middleware": "^3.7.2",
     "webpack-hot-middleware": "^2.25.0",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^5.2.1",
+    "zombie": "^6.1.4"
   },
   "dependencies": {}
 }

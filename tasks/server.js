@@ -8,7 +8,7 @@ import path from 'path';
 import { devConfig as WebpackConfig } from './webpack';
 import { GeotabMockMiddleware } from './geotab';
 
-const browser = Browser.create();
+export const browser = Browser.create();
 const bundler = webpack(WebpackConfig);
 
 export function server() {
