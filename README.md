@@ -19,6 +19,16 @@ Publish the production files to the dist folder:
 gulp publish
 ```
 
+Lint is used as a part of the gulp series for most other build tasks, but can be ran by itself with the following:
+```
+gulp lint
+```
+
+To run tests:
+```
+gulp test
+```
+
 ## VSCode
 This template can be used in numerous IDE's, but there is built-in support for VSCode debugging in conjunction with the Chrome Debugger extension via the ./vscode files.  Debugging is as simple as running the "gulp" command and then hitting F5 with full support for adding breakpoints in your code and stepping through logic.
 
