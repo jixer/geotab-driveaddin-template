@@ -70,6 +70,7 @@ const sharedConfig = {
 };
 
 export const devConfig = Object.assign({}, sharedConfig);
+devConfig.mode = 'development';
 devConfig.plugins.push(new webpack.HotModuleReplacementPlugin());
 devConfig.devtool = 'eval-source-map';
 devConfig.devServer = {
@@ -77,6 +78,7 @@ devConfig.devServer = {
 };
 
 export const config = Object.assign({}, sharedConfig);
+config.mode = 'production';
 
 export function build() {
     return new Promise((resolve, reject) => webpack(config, (err, stats) => {
